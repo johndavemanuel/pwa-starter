@@ -7,4 +7,4 @@ A simple PWA demo utilizing an app manifest, service workers and caching. This d
 https://johndavemanuel.github.io/pwa-starter/
 
 ## Audits
-<img src="audit.PNG">
+<img src="lighthouse-audit.png">
