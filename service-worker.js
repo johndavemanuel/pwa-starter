@@ -1,4 +1,4 @@
-var cacheName = 'pwa-starter';
+var staticCacheName = 'pwa-starter';
 var filesToCache = [
   '/',
   'index.html',
@@ -6,16 +6,30 @@ var filesToCache = [
   'main.js'
 ];
 
-/* Start the service worker and cache all of the app's shell content */
+// Start the service worker and cache all of the app's shell content
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
+    caches.open(staticCacheName).then(function(cache) {
       return cache.addAll(filesToCache);
     })
   );
 });
 
-/* Serve cached content when offline */
+// Check if server worker is activated
+self.addEventListener('activate', function(e) {
+  console.log('Service worker has been activate.');
+  // Delete old static cache
+  e.waitUntil(
+      caches.keys().then(cacheNames => {
+          return Promise.all(cacheNames
+              .filter(cacheName => cacheName !== staticCacheName)
+              .map(cacheName => caches.delete(cacheName))
+          );
+      })
+  );
+});
+
+// Serve cached content when offline
 self.addEventListener('fetch', function(e) {
   e.respondWith(
     caches.match(e.request).then(function(response) {
