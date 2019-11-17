@@ -6,6 +6,8 @@ This demo is written in plain-vanilla HTML, CSS and Javascript (ES6).
 
 It has no dependencies.
 
+Workbox JS is also included.
+
 
 ## Demo
 https://johndavemanuel.github.io/pwa-starter/
