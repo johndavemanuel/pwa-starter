@@ -6,6 +6,7 @@ var filesToCache = [
 	'css/style.css',
 	'js/offline.js',
 	'js/geolocation.js',
+	'js/network.js',
 ];
 
 // Start the service worker and cache all of the app's shell content
