@@ -9,7 +9,7 @@ It has no dependencies.
 
 
 ## Demo
-https://johndavemanuel.github.io/pwa-starter/
+https://progwebapp.web.app/
 
 ## Audits
-<img src="images/lighthouse-audit.png">
+<img src="lighthouse-audit.png">
