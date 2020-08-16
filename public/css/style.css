@@ -2,6 +2,11 @@ body {
  font-family: 'Roboto', sans-serif;
 }
 
+body.offline {
+	background-color: black;
+	color: white;
+}
+
 html,
 .fullscreen {
   display: flex;

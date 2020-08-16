@@ -1,9 +1,10 @@
-var staticCacheName = 'pwa-starter';
+var staticCacheName = 'pwa-starter-v1';
 var filesToCache = [
   '/',
   'index.html',
-  'css/style.css',
-  'main.js'
+	'main.js',
+	'css/style.css',
+	'js/offline.js',
 ];
 
 // Start the service worker and cache all of the app's shell content
