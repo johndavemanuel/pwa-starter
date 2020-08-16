@@ -17,9 +17,11 @@
   //To update network status
   function updateNetworkStatus() {
     if (navigator.onLine) {
-      body.classList.remove('offline');
+			body.classList.remove('offline');
+			console.log('Online');
     } else {
-      body.classList.add('offline');
+			body.classList.add('offline');
+			console.log('Offline');
     }
   }
 })();

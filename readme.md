@@ -6,7 +6,9 @@ This demo is written in plain-vanilla HTML, CSS and Javascript (ES6).
 
 It has no dependencies.
 
+## Examples
 
+- Change background color and text color when offline
 
 ## Demo
 https://progwebapp.web.app/
